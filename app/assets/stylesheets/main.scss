@@ -75,6 +75,19 @@ $hover-orange: rgb(234,74,29);
   border-radius: 0;
   .navbar-brand {
     color: $brand-yellow;
+    &:hover {
+      color: $brand-red;
+      background-color: $brand-yellow;
+    }
+  }
+  .collapsed {
+    border-color: $brand-yellow;
+    &:hover {
+      background-color: rgb(175,15,0);
+    }
+  }
+  .icon-bar {
+    background-color: $brand-yellow !important;
   }
 }
 
@@ -89,6 +102,24 @@ $hover-orange: rgb(234,74,29);
   .testimonial {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+}
+
+.main-footer {
+  background-color: black;
+  height: 40px;
+  vertical-align: center;
+  margin-bottom: 0;
+  margin-top: 40px;
+  a {
+    font-family: 'Pacifico', sans-serif;
+    color: white;
+    height: 20px;
+    float: right;
+    &:hover  {
+      color: $brand-yellow;
+      text-decoration: none;
+    }
   }
 }
 
@@ -111,7 +142,8 @@ table {
     display: inline-block;
     color: $brand-yellow !important;
     &:hover {
-      color: $hover-orange;
+      color: $brand-red !important;
+      background-color: $brand-yellow !important;
     }
   }
 }
@@ -186,6 +218,6 @@ img {
   }
 }
 
-footer {
-  padding: 100px;
-}
+// footer {
+//   padding: 100px;
+// }
