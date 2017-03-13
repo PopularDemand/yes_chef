@@ -1,31 +1,57 @@
 <div class="row">
-  <div id="welcome message" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-    <h2 class='text-center'>Welcome to Yes, Chef!</h2>
+  <div id="welcome-message" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <h2 class='text-center'>Welcome to <span class="yes-chef" id='main-logo'>Yes, Chef!</span></h2>
     <h5 class='text-center text-muted'>Where chefs and their customers come to make life easier.</h5>
-    <p>
+<!--     <p>
       Here you can look at your personal chef's available menu's and place orders in advance. With our fool-proof ordering system, never miss an order!
-    </p>
+    </p> -->
   </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
   <div id="welcome message" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
     <h3 class='text-center'>Before we get started, are you a chef or a customer?</h3>
   </div>
 </div>
-<hr>
+<hr> -->
 
-<div class="col-md-12">
-  <div class="row">
-    <div class="col-md-6 jumbotron">
-      <div class="chef_signup">
-        <%= link_to 'I\'m a Chef!', new_user_registration_path(role: 'chef'), class: "btn btn-block btn-lg btn-primary"  %>
+<div class="landing-content text-center">
+  <div class="col-md-8">
+    <div class="testimonial-wrapper text-center">
+      <%= image_tag 'pizza.jpg', class: 'food-img' %>
+      <div class="testimonial">
+        <%= image_tag 'marie.png', class: 'avatar' %>
+        <q><span class="yes-chef">Yes, Chef!</span> has freed my time so I can do what I love doing... Cooking!</q>
       </div>
-    </div>
 
-    <div class="col-md-6 jumbotron">
-      <div class="customer_signup">
-        <%= link_to 'I\'m a Customer!', new_user_registration_path(role: 'customer'), class: "btn btn-block btn-lg btn-success" %>
+       
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="row sign-up-btns">
+      <div class="col-md-12 well signup-well">
+        <div class="text-center">
+          <h4 class='well-title'>New Chef?</h4>
+          <p class='well-text'>Once you have a taste of the simplicity on our streamlined ordering process, you'll never look back.</p>
+          <%= link_to 'Sign up as a Chef!', new_user_registration_path(role: 'chef'), class: "btn btn-block btn-default btn-chef well-btn"  %>
+        </div>
+      </div>
+  
+      <div class="col-md-12 well signup-well">
+        <div class="text-center">
+          <h4 class='well-title'>New Customer?</h4>
+          <p class='well-text'>Gone are the days of arranging appointments. Order on your own time.</p>
+          <%= link_to 'Sign up as a Customer!', new_user_registration_path(role: 'customer'), class: "btn btn-block btn-default btn-client well-btn" %>
+        </div>
+      </div>
+  
+      <div class="col-md-12 well signup-well">
+        <div class="text-center">
+          <h4 class='well-title'>Returning User?</h4>
+          <p class='well-text'>Welcome back!</p>
+          <%= link_to 'Manage your Orders', new_user_session_path, class: "btn btn-block btn-default btn-client well-btn" %>
+        </div>
       </div>
     </div>
   </div>

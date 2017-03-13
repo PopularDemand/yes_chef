@@ -4,6 +4,7 @@
     <title>Yes, Chef! | <% if content_for :title %><%= yield(:title) %><% else %>Ordering Made Better<% end %></title>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -35,7 +36,5 @@
         </div><!-- col -->
       </div><!-- row -->
     </main>
-    <footer>
-    </footer>
   </body>
 </html>

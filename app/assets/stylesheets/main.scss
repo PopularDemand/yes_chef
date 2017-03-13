@@ -1,6 +1,101 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// brand yellow: rgb(234,176,29)
+// brand red: rgb(191,33,16)
+// hover orange: rgb(234,74,29)
+
+$brand-red: rgb(191,33,16);
+$brand-yellow: rgb(238,191,74);
+$hover-orange: rgb(234,74,29);
+
+.yes-chef {
+  font-family: 'Pacifico', cursive;
+}
+
+#main-logo {
+  color: $brand-yellow;
+  font-size: 34px;
+}
+
+#welcome-message {
+  margin-bottom: 22px;
+}
+
+.sign-up-btns {
+  border-radius: 25px;
+  display: inline-block;
+  height: 100%;
+}
+
+.signup-well {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-color: white;
+  border-bottom: 2px dotted white;
+  border-top: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #222;
+  &:first-child {
+    border-top: 1px solid white;
+  }
+  &:last-child {
+    border-bottom: 1px solid white;
+  }
+  .well-title {
+    font-weight: 600;
+    color: $brand-yellow;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.13em;
+  }
+
+  .well-btn {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(191,33,16);
+    color: #FFF;
+    border: none;
+    border-radius: 0;
+    &:hover {
+      background-color: rgba(234,74,29, 1.0);
+    }
+  }
+  .well-text {
+    margin-bottom: 5px;
+    color: white;
+  }
+}
+
+.main-nav {
+  background-color: rgb(191,33,16);
+  border: none;
+  border-radius: 0;
+  .navbar-brand {
+    color: $brand-yellow;
+  }
+}
+
+.testimonial-wrapper {
+  .food-img {
+    max-height: 400px;
+  }
+  .avatar {
+    max-height: 75px;
+    border-radius: 100%;
+  }
+  .testimonial {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.text-muted {
+  color: #CCC;
+}
+
 table {
   th {
     text-align: center
@@ -14,6 +109,10 @@ table {
 .navbar-right {
   li > a {
     display: inline-block;
+    color: $brand-yellow !important;
+    &:hover {
+      color: $hover-orange;
+    }
   }
 }
 
