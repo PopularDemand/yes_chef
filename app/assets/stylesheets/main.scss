@@ -60,6 +60,16 @@ $hover-orange: rgb(234,74,29);
   }
 }
 
+.well-links {
+  a {
+    color: $brand-yellow;
+    &:hover {
+      text-decoration: none;
+      color: rgb(215,168,51);
+    }
+  }
+}
+
 .well-btn {
   display: inline-block;
   margin-top: 5px;
@@ -117,13 +127,11 @@ $hover-orange: rgb(234,74,29);
 
 .main-footer {
   background-color: black;
-  height: 60px;
   vertical-align: center;
   margin-bottom: 0;
   margin-top: 40px;
   border-radius: 0;
   a {
-    line-height: 29px;
     font-family: 'Pacifico', sans-serif;
     color: white;
     height: 20px;
@@ -133,6 +141,13 @@ $hover-orange: rgb(234,74,29);
       text-decoration: none;
     }
   }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
 }
 
 .text-muted {

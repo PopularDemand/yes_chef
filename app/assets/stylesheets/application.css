@@ -15,7 +15,14 @@
  *= require_tree .
  *= require_self
  */
+
 body {
   background-color: #222;
   color: #FFF;
+  margin-bottom: 85px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
