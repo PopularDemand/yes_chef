@@ -2,15 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$brand-red: rgb(191,33,16);
+$brand-yellow: rgb(238,191,74);
+$hover-orange: rgb(234,74,29);
+
 .menu-item-partial {
+  border-color: #aaa;
+  border-radius: 0;
 
   .panel-title {
     margin-bottom: 5px;
+    a {
+      color: $brand-red;
+      font-size: 24px;
+      text-decoration: none;
+      &:hover {
+        color: rgb(175,17,0);
+        text-decoration: underline;
+      }
+    }
   }
+
 
   .category-label {
     font-size: 12px;
     margin-right: 5px;
+  }
+
+  .panel-heading {
+    background-color: rgba(238,191,74, 0.5);
+  }
+  .panel-body {
+    background-color: white;
+    color: #222;
+    font-size: 18px;
+  }
+  .panel-footer {
+    background-color: rgba(238,191,74, 0.5);
   }
 
 }
@@ -18,8 +46,14 @@
 
 .ingredients-list {
   font-style: italic;
-  }
+  font-size: 14px;
+}
 
-.menu_item_link {
+.add-menu-item {
+  color: $brand-red;
+  text-decoration: none;
+  &:hover {
+    color: rgb(175,17,0);
     text-decoration: underline;
   }
+}
