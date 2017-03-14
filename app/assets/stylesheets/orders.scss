@@ -3,11 +3,31 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $green-text: #27B013;
+$brand-red: rgb(191,33,16);
+$pale-yellow: rgba(238,191,74, 0.4);
+$pale-orange: rgba(234,74,29, 0.4);
+$hover-red: rgb(175,15,0);
 
 .order-table {
   .delivered-text {
     font-style: italic;
     color: $green-text;
     margin-bottom: 0;
+  }
+  thead {
+  background-color: $brand-red;
+  color: white;
+  }
+  .order-row:nth-child(odd) {
+    background-color: $pale-yellow;
+    color: black;
+  }
+  .order-row:nth-child(even) {
+    background-color: $pale-orange;
+    color: black;
+  }
+  .total-row {
+    background-color: $brand-red !important;
+    color: white;
   }
 }
