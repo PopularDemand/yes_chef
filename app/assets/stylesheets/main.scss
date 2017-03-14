@@ -34,6 +34,13 @@ $hover-red: rgb(175,15,0);
   color: black;
 }
 
+.red-link {
+  color: $brand-red;
+  &:hover {
+    color: $hover-red;
+  }
+}
+
 #main-logo {
   color: $brand-yellow;
   font-size: 34px;
