@@ -1,3 +1,19 @@
 // Place all the styles related to the Ingredients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$brand-red: rgb(191,33,16);
+$brand-yellow: rgb(238,191,74);
+$brand-orange: rgb(234,74,29);
+
+.ingredient-table {
+  th {
+    background-color: $brand-red;
+    color: $brand-yellow;
+  }
+  .ingredient-row:nth-child(odd) {
+    background-color: $brand-red;
+  }
+  .ingredient-row:nth-child(even) {
+    background-color: $brand-orange;
+  }
+}
