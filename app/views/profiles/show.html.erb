@@ -1,15 +1,17 @@
 <% content_for :title, "All About: #{@profile.first_name} #{@profile.last_name}" %>
 
-<h4>Name:</h4>
-<p class="profile-info"><%= "#{@profile.first_name} #{@profile.last_name}" %></p>
-<h4>Email:</h4>
-<p class="profile-info"><%= @profile.user.email %></p>
-<h4>Telephone:</h4>
-<p class="profile-info"><%= @profile.telephone || "Not available" %></p>
-<h4>Address:</h4>
-<p class="profile-info"><%= @profile.address || "Not available" %></p>
-
-<br>
-<% if current_user == @user %>
-  <%= link_to 'Edit your profile', edit_user_profile_path(current_user), class: "btn btn-primary" %>
-<% end %>
+<div class="text-black">
+  <h4>Name:</h4>
+  <p class="profile-info"><%= "#{@profile.first_name} #{@profile.last_name}" %></p>
+  <h4>Email:</h4>
+  <p class="profile-info"><%= @profile.user.email %></p>
+  <h4>Telephone:</h4>
+  <p class="profile-info"><%= @profile.telephone || "Not available" %></p>
+  <h4>Address:</h4>
+  <p class="profile-info"><%= @profile.address || "Not available" %></p>
+  
+  <br>
+  <% if current_user == @user %>
+    <%= link_to 'Edit your profile', edit_user_profile_path(current_user), class: "btn btn-primary" %>
+  <% end %>
+</div>
