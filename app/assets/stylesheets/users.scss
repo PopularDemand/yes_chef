@@ -1,3 +1,23 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$brand-red: rgb(191,33,16);
+$pale-yellow: rgba(238,191,74, 0.4);
+$pale-orange: rgba(234,74,29, 0.1);
+$hover-red: rgb(175,15,0);
+
+.customer-table {
+  th {
+    background-color: $brand-red;
+    color: white;
+  }
+  .customer-row:nth-child(odd) {
+    background-color: $pale-yellow;
+    color: black;
+  }
+  .customer-row:nth-child(even) {
+    background-color: #EEE;
+    color: black;
+  }
+}

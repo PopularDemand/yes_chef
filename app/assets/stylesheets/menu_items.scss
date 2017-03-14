@@ -5,6 +5,7 @@
 $brand-red: rgb(191,33,16);
 $brand-yellow: rgb(238,191,74);
 $hover-orange: rgb(234,74,29);
+$pale-yellow: rgba(238,191,74, 0.4);
 
 .menu-item-partial {
   border-color: #aaa;
@@ -55,5 +56,20 @@ $hover-orange: rgb(234,74,29);
   &:hover {
     color: rgb(175,17,0);
     text-decoration: underline;
+  }
+}
+
+.top-items-table {
+  th {
+    background-color: $brand-red;
+    color: white;
+  }
+  .item-row:nth-child(odd) {
+    background-color: $pale-yellow;
+    color: black;
+  }
+  .item-row:nth-child(even) {
+    background-color: #EEE;
+    color: black;
   }
 }
