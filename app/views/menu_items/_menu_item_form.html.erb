@@ -1,4 +1,4 @@
-<%= simple_form_for menu_item, html: { class: 'syncronousUpload' } do |f| %>
+<%= simple_form_for menu_item, html: { class: 'syncronousUpload text-black' } do |f| %>
   <%= f.input :name, placeholder: 'e.g. Savory Roast Beef' %>
   <%= f.input :description, placeholder: 'e.g. Round of beef, seasoned lightly with garlic, carrots, crushed black pepper, and other spices, slowly roasted in a traditional clay oven' %>
 
@@ -24,5 +24,5 @@
   <%= f.input :price, label: "Price in dollars", placeholder: '25.00' %>
 
   <%= render partial: 'img_upload_form', locals:{form: f} %>
-  <%= f.submit "Add Menu Item", class: 'btn btn-primary' %>
+  <%= f.submit "Add Menu Item", class: 'btn well-btn' %>
 <% end %>
