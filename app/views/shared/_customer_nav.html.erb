@@ -1,6 +1,6 @@
 <div class="col-sm-2">
-  <div class="sidebar-nav">
-    <div class="navbar navbar-default" role="navigation">
+  <div class="sidebar-nav sidebar">
+    <div class="navbar" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -12,9 +12,9 @@
       </div>
       <div class="navbar-collapse collapse sidebar-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><%= link_to "Menus", customer_menus_path %></li>
+          <li class='sidebar-li'><%= link_to "Menus", customer_menus_path %></li>
           <li class="nav-divider"></li>
-          <li><%= link_to "Order History", user_orders_path(current_user) %></li>
+          <li class='sidebar-li'><%= link_to "Order History", user_orders_path(current_user) %></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
