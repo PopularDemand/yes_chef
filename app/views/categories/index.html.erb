@@ -2,6 +2,6 @@
 
 <div class="word-map">
   <% @categories.shuffle.each do |category| %>
-    <span style="font-size: <%= (category.menu_items.size*6) + 16 %>px; margin:10px"><%= link_to category.name, category %></span>
+    <span style="font-size: <%= (category.menu_items.size*6) + 16 %>px; margin:10px"><%= link_to category.name, category, class: [random_brand_color, 'category'] %></span>
   <% end %>
 </div>

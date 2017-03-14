@@ -7,6 +7,7 @@
 
 $brand-red: rgb(191,33,16);
 $brand-yellow: rgb(238,191,74);
+$brand-orange: rgb(234,74,29);
 $hover-red: rgb(175,15,0);
 
 .yes-chef {
@@ -23,6 +24,10 @@ $hover-red: rgb(175,15,0);
 
 .text-yellow, .brand-yellow {
   color: $brand-yellow;
+}
+
+.text-orange {
+  color: $brand-orange;
 }
 
 #main-logo {
