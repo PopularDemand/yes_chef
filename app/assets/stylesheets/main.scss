@@ -13,7 +13,15 @@ $hover-orange: rgb(234,74,29);
   font-family: 'Pacifico', cursive;
 }
 
-.brand-yellow {
+.splash-font {
+  font-family: 'Pacifico', sans-serif;
+}
+
+.text-red {
+  color: $brand-red;
+}
+
+.text-yellow, .brand-yellow {
   color: $brand-yellow;
 }
 
@@ -24,6 +32,7 @@ $hover-orange: rgb(234,74,29);
 
 #welcome-message {
   margin-bottom: 22px;
+  margin-top: 30px;
 }
 
 .title {
@@ -92,6 +101,7 @@ $hover-orange: rgb(234,74,29);
   background-color: rgb(191,33,16);
   border: none;
   border-radius: 0;
+  margin-bottom: 0;
   .navbar-brand {
     color: $brand-yellow;
     &:hover {
@@ -247,6 +257,13 @@ img {
     display: inline-block;
     margin-top: 10px;
   }
+}
+
+.full-width-bar {
+  margin: 0 -9999rem 20px -9999rem;
+  /* add back negative margin value */
+  padding: 1.5rem 9999rem;
+  background: $brand-yellow;
 }
 
 // footer {
