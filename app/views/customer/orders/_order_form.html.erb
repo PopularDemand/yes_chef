@@ -1,4 +1,4 @@
-<%= simple_form_for [:customer, order.menu, order] do |f| %>
+<%= simple_form_for [:customer, order.menu, order], html: { class: 'text-black' } do |f| %>
   <% order.menu.menu_items.each do |menu_item| %>
     <%= f.simple_fields_for :order_items, oi do |m| %>
       <div class="row">
@@ -36,7 +36,7 @@
       </div>
     <% end %>
   <% end %>
-  <%= f.button :submit, "Create Order", class: "btn btn-primary" %>
+  <%= f.button :submit, "Order Now", class: "btn well-btn" %>
 <% end %>
 <script>
   $('#new_order').find("input").each(function(i, elem) {
