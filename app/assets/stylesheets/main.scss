@@ -7,7 +7,7 @@
 
 $brand-red: rgb(191,33,16);
 $brand-yellow: rgb(238,191,74);
-$hover-orange: rgb(234,74,29);
+$hover-red: rgb(175,15,0);
 
 .yes-chef {
   font-family: 'Pacifico', cursive;
@@ -92,7 +92,7 @@ $hover-orange: rgb(234,74,29);
   border: none;
   border-radius: 0;
   &:hover {
-    background-color: rgb(175,15,0);
+    background-color: $hover-red;
     color: white;
   }
 }
@@ -112,7 +112,7 @@ $hover-orange: rgb(234,74,29);
   .collapsed {
     border-color: $brand-yellow;
     &:hover {
-      background-color: rgb(175,15,0);
+      background-color: $hover-red;
     }
   }
   .icon-bar {
@@ -264,6 +264,45 @@ img {
   /* add back negative margin value */
   padding: 1.5rem 9999rem;
   background: $brand-yellow;
+}
+
+.sidebar {
+  background-color: $brand-red;
+  color: $brand-yellow;
+  overflow-x: hidden;
+  .navbar {
+    border: none;
+    margin-bottom: 0;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-toggle {
+    border-color: $brand-yellow;
+    &:hover {
+      background-color: $hover-red;
+    }
+  }
+  .icon-bar {
+    background-color: $brand-yellow !important;
+  }
+  .sidebar-li {
+    display: inline-block;
+    width: 100%;
+    &:hover {
+      background-color: $hover-red;
+    }
+    a {
+      color: white;
+      &:hover {
+        background: inherit;
+        color: inherit;
+      }
+    }
+  }
 }
 
 // footer {
