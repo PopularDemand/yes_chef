@@ -19,10 +19,12 @@ $hover-red: rgb(175,15,0);
 }
 
 .form-control:focus {
-  // &:focus {
-    border-color: $brand-yellow;
-    box-shadow: inset 0 1px 1px rgba(238,191,74, 0.075), 1px 1px 1px rgba(238,191,74, 0.6);
-  // }
+  border-color: $brand-yellow;
+  box-shadow: inset 0 1px 1px rgba(238,191,74, 0.075), 1px 1px 1px rgba(238,191,74, 0.6);
+}
+
+.demo-blocks {
+  clear: left;
 }
 
 .text-red {
