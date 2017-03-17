@@ -5,7 +5,7 @@
 
 *Yes, Chef!* allows customers to order from a Personal Chef's menu to simplify their meal planning.
 
-Deployed site can be found [here](https://yes-chef.herokuapp.com/) on Heroku.
+Deployed site can be found [here](https://yes-chef-demo.herokuapp.com/) on Heroku.
 
 Visit the landing page and sign up as a chef or customer.
 
