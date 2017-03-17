@@ -11,6 +11,8 @@ Profile.destroy_all
 
 
 CATEGORIES = %w(Breakfast Lunch Dinner Vegan Gluten-free Vegetarian Paleo Freegan)
+MENU_ITEMS = ['Turkey Dinner', 'Fried Eggs', 'Pasta Salad', 'Roast Beef', 'Pancakes',
+              'Lentil Soup', 'Rice Pilaf', 'Chicken Alfredo', 'Taco Salad', 'Red Velvet Cake']
 
 puts "Creating chef..."
 User.create(email: "a@a.com",
@@ -50,14 +52,14 @@ end
 puts "Creating ingredients..."
 10.times do
   Ingredient.create(chef: User.where(role: "chef").first,
-  name: Faker::Hipster.word)
+  name: Faker::Food.ingredient)
 end
 
 puts "Creating menu items..."
-10.times do
-  menu_item = User.where(role: "chef").first.menu_items.create(name: Faker::Beer.name,
-  description: Faker::Hipster.sentence,
-  price_cents: 7_920)
+MENU_ITEMS.each do |item|
+  menu_item = User.where(role: "chef").first.menu_items.create(name: item,
+  description: Faker::Lorem.paragraph(2),
+  price_cents: (2_500..7_920).to_a.sample)
 
   menu_item.categories << Category.all.sample
 
@@ -73,8 +75,8 @@ end
 puts "Creating menus..."
 User.where(role: "chef").each do |chef|
   3.times do |n|
-    menu = chef.menus.build(order_deadline: Faker::Time.between(Date.today, 5.days.from_now),
-                            completion_date: (6 + n).days.from_now)
+    menu = chef.menus.build(order_deadline: Faker::Time.between(Date.today, 20.days.from_now),
+                            completion_date: (21 + n).days.from_now)
     menu_items = []
 
     puts "Creating menu selections and placing orders..."
